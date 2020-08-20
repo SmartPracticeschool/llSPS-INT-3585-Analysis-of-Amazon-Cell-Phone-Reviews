@@ -1,1 +1,27 @@
+<html>
+<body align="center">
+    <h1>Analysis of Amazon Cell Reviews</h1>
+     <style>
+    body {
+        background-image: url('https://cdn.abcotvs.com/dip/images/4733991_112118-cc-amazon-logo-img.jpg?w=1280&r=16%3A9');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+     </style>
+          <form action="{{url_for('y_predict')}}"method="post">
+				<table align="center">
+					<tr>
+					<td><label for="Review"><b>Enter your review for the project:</b></label></td>
+					<td><input type="text" name="Review" placeholder="Review" required="required" /></td>
+					</tr>
+					
+						<td colspan="2" align="center"><button type="submit">Predict</button></td>
+					<tr>
+				</table>
+         </form>
+   <br>
+   <br>
+  <p align="center">{{ prediction_text }}</p>
+</body>
+</html>
 
